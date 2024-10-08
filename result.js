@@ -34,19 +34,19 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('play-music-btn').addEventListener('click', playBackgroundMusic);
 
     if (score / total < 0.4) {
-        audio.src = '/Users/hamooshaq/Desktop/agung2/skor kecil.mp3';
+        audio.src = 'skor kecil.mp3';
         giftVideo.style.display = 'block';  
         giftVideo.muted = true;   
         giftVideo.play();  
         birthdayMessage.style.display = 'block';  
     } else if (score / total < 0.7) {
-        audio.src = '/Users/hamooshaq/Desktop/agung2/skor tengah.mp3';
+        audio.src = 'skor tengah.mp3';
         giftVideo.style.display = 'block'; 
         giftVideo.muted = true;   
         giftVideo.play();  
         birthdayMessage.style.display = 'block';  
     } else {
-        audio.src = '/Users/hamooshaq/Desktop/agung2/skor tinggi.mp3';
+        audio.src = 'skor tinggi.mp3';
         giftVideo.style.display = 'block';
         giftVideo.muted = true;
         giftVideo.play(); 
