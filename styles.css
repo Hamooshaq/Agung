@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#start-container, #quiz-container, #result-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    color: #d63384;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+#answers {
+    margin-bottom: 20px;
+}
+
+.answer-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #d63384;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #d63384;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.answer-button:hover {
+    background-color: #d63384;
+    color: #fff;
+}
+
+.answer-button.selected {
+    background-color: #d63384;
+    color: #fff;
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #d63384;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #b8236b;
+}
+
+button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+audio {
+    margin-top: 20px;
+    width: 100%;
+}
+
+#gift-video {
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+    margin: 20px 0;
+    display: block;
+}
+
+#birthday-message {
+    font-size: 20px;
+    color: #d63384;
+    margin: 10px 0;
+    display: none;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+#result-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
